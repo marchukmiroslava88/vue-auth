@@ -1,15 +1,15 @@
 <template>
   <v-container>
     <v-layout row wrap>
-      <v-flex xs12>
+      <v-flex xs12 mb-4>
         <h1 class="blue-grey--text">Profile</h1>
       </v-flex>
-      <v-flex xs4>
-        <v-img class="pointer"
+      <v-flex flex md3 sm4 offset-sm0 xs8 offset-xs2 mb-4>
+        <v-img class="pointer user-photo"
                 src="https://getstamped.co.uk/wp-content/uploads/WebsiteAssets/Placeholder.jpg"
         ></v-img>
       </v-flex>
-      <v-flex xs8 px-4>
+      <v-flex flex md6 sm8 xs12 px-4>
         <div class="mb-4 blue-grey--text">
           <div class="border-bottom text-uppercase">Contact Information</div>
           <div class="border-bottom py-2">Email: {{email}}</div>
@@ -49,5 +49,11 @@
   }
   .pointer{
     cursor: pointer;
+  }
+  .user-photo{
+    height: 160px;
+    width: 160px;
+    border-radius: 100%;
+    margin: auto;
   }
 </style>
